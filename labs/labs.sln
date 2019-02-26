@@ -62,6 +62,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_115_Northwind_Entity_Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_116_exceptions", "lab_116_exceptions\lab_116_exceptions.csproj", "{E26531B5-BAFA-41B5-AF70-46DB9F13B4F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_15_panels", "lab_15_panels\lab_15_panels.csproj", "{D409D152-4586-4944-9A0E-E0677D4E1FDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_117_Entity_tabs", "lab_117_Entity_tabs\lab_117_Entity_tabs.csproj", "{055CA351-992F-48DF-A01E-304A9E44CA44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -176,6 +180,14 @@ Global
 		{E26531B5-BAFA-41B5-AF70-46DB9F13B4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E26531B5-BAFA-41B5-AF70-46DB9F13B4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E26531B5-BAFA-41B5-AF70-46DB9F13B4F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D409D152-4586-4944-9A0E-E0677D4E1FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D409D152-4586-4944-9A0E-E0677D4E1FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D409D152-4586-4944-9A0E-E0677D4E1FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D409D152-4586-4944-9A0E-E0677D4E1FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{055CA351-992F-48DF-A01E-304A9E44CA44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055CA351-992F-48DF-A01E-304A9E44CA44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055CA351-992F-48DF-A01E-304A9E44CA44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055CA351-992F-48DF-A01E-304A9E44CA44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
