@@ -73,7 +73,7 @@ namespace lab_117_Entity_tabs
             productSelect = (Order_Detail)ListBox03.SelectedItem;
             using (var db = new NorthwindEntities())
             {
-                productNames = db.Products.Where(pn => pn.ProductID == productSelect.ProductID).ToList<Product>();
+                productNames = db.Products.Where(pn => pn.ProductID ==  productSelect.ProductID).ToList<Product>();
                 ListBox04.ItemsSource = productNames;
                 ListBox04.DisplayMemberPath = "ProductName";
             }
