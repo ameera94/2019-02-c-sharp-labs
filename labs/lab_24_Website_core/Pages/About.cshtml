@@ -1,0 +1,40 @@
+﻿@page
+@model AboutModel
+@{
+
+    //ViewData is a dictionary of strings with the name and data.
+    ViewData["Title"] = "Customer";
+    ViewData["Test"] = "Testing";
+}
+<h2>@ViewData["Title"] - @ViewData["Test"]</h2>
+
+<select name="orderBy">
+    <option value="custID">Customer ID </option>
+    <option value="contactName">Contact Name</option>
+    <option value="city">City</option>
+</select>
+
+@if (orderBy.value == "custID")
+{
+
+}
+
+
+
+    <div class="row">
+        <div class="column col-sm-4"><h3>Customer ID</h3></div>
+        <div class="column col-sm-4"><h3>ContactName</h3></div>
+        <div class="column col-sm-4"><h3>City</h3></div>
+    </div>if
+
+@foreach (Customer c in Model.customers)
+{
+    <div class="row">
+        <div class="column col-sm-4">@c.CustomerID</div>
+        <div class="column col-sm-4">@c.ContactName</div>
+        <div class="column col-sm-4">@c.City</div>
+    </div>
+}
+
+
+
