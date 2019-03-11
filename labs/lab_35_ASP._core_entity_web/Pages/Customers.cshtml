@@ -1,0 +1,74 @@
+﻿@page
+@model lab_35_ASP._core_entity_web.Pages.CustomersModel
+@{
+    ViewData["Title"] = "Customers";
+}
+<style>
+    .container{
+
+    }
+    div.col-sm-3{
+        background: rgb(152, 145, 220);
+        padding: 3vh 2vh; 
+    }
+    div.row{
+        padding: 2vh;
+    }
+    div.row-head{
+        background: rgb(163, 152, 100);
+    }
+</style>
+
+<div class="container">
+
+    <h2>Customers</h2>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="https://www.spartaglobal.com">Sparta</a>
+            <img src="https://cdn.crackergroup.com/cache_test/imgs/logos-hires/731---w-400_h-200_zc-1_q-60.png" width="120px"/>
+        </div>
+    <div class="navbar-collapse collapse">
+        <ul class="navbar-nav nav-tabs-justified">
+            <li>Page 1</li>
+            <li>Page 2</li>
+            <li>Page 3</li>
+        </ul>
+    </div>
+    </nav>
+
+    <div class="row">
+        <h6>Add a new customer</h6>
+        <form method="post">
+<div><input asp-for="customer.CustomerID" placeholder="Customer ID"/></div>
+<div><input asp-for="customer.ContactName" placeholder="Name"/></div>
+<div><input asp-for="customer.ContactTitle" placeholder="Contact Title"/></div>
+<div><input asp-for="customer.CompanyName" placeholder="Company Name"/></div>
+<div><input asp-for="customer.City" placeholder="City"/></div>
+            <input type="submit"/>
+</form>
+
+    </div>
+    <div class="row">
+        <div class="column col-sm-3"><h3>Customer ID</h3></div>
+        <div class="column col-sm-3"><h3>Contact Title</h3></div>
+        <div class="column col-sm-3"><h3>Contact Name</h3></div>
+        <div class="column col-sm-3"><h3>City</h3></div>
+    </div>
+
+    @foreach (lab_35_ASP._core_entity_web.Models.Customer c in Model.customers)
+    {
+        <div class="row">
+            <div class="column col-sm-3">@c.CustomerID</div>
+            <div class="column col-sm-3">@c.ContactTitle</div>
+            <div class="column col-sm-3">@c.ContactName</div>
+            <div class="column col-sm-3">@c.City</div>
+        </div>
+    }
+</div>
+
+
+
+
+
+}
+

@@ -8,9 +8,9 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
-using lab_29_ASP_DOT_NET_API;
+using web_121_api;
 
-namespace lab_29_ASP_DOT_NET_API.Controllers
+namespace web_121_api.Controllers
 {
     public class CustomersController : ApiController
     {
@@ -39,7 +39,7 @@ namespace lab_29_ASP_DOT_NET_API.Controllers
         [ResponseType(typeof(void))]
         public IHttpActionResult PutCustomer(string id, Customer customer)
         {
-            if (!ModelState.IsValid) 
+            if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }

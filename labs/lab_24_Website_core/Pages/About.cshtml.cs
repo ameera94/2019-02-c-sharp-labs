@@ -42,6 +42,11 @@ namespace lab_24_Website_core.Pages
             }
 
         }
+
+      //  public void dropSelect()
+        //{
+        //    var val = AboutModel
+        //}
     }
 
 
