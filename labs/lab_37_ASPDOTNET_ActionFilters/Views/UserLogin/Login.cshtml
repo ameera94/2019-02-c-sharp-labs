@@ -1,0 +1,15 @@
+﻿@model lab_37_ASPDOTNET_ActionFilters.Models.LoginModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+<form action="/UserLogin/Login" method="post">
+    <label>Username</label><br />
+    <input type="text" name="username" value="" size="15" /><br />
+    <label>Password</label><br />
+    <input type="password" name="password" value="" size="15" /><br /><br/>
+    <input type="submit" name="Log in" />
+</form>
+
